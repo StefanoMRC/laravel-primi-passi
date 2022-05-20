@@ -13,6 +13,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
 Route::get('/', function () {
-    return view('welcome');
-});
+    $data=[
+        'saluto'=>'hello word'
+    ];
+
+    return view('home', $data);
+})->name('home');
+
+Route::get('/pagina2', function () {
+    $data=[
+        'saluto2'=>'hello word 2'
+    ];
+
+    return view('pagina2', $data);
+})->name('pagina2');
