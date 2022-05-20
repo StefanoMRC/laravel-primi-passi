@@ -11,6 +11,12 @@
         {{$saluto}}
     </h1>
     <a href="{{route('pagina2')}}">pagina 2</a>
-    
+    <ul>
+        @foreach($nomi as $nome)
+        <li>
+            {{$nome}}
+        </li>
+        @endforeach
+    </ul>
 </body>
 </html>

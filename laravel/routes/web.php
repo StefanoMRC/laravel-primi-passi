@@ -16,7 +16,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $data=[
-        'saluto'=>'hello word'
+        'saluto'=>'hello word',
+        'nomi'=>[
+            'fazzone',
+            'counter',
+            'marza',
+            'magister'
+        ]
     ];
 
     return view('home', $data);
